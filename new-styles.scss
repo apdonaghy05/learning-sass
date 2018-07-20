@@ -1,8 +1,24 @@
+
+@mixin card($bg-color){
+  box-shadow: gray 3px 3px 8px;
+  background-color: $bg-color;
+}
+
+
+
+$accent: #3A612D;
+
+$highlight: #D2F0FA;
+
+$brand:dodgerblue;
+
+
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #2D5461;
+  color:$brand;
   font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;;
 }
 
@@ -16,35 +32,39 @@ body {
 }
 
 .cta {
+  @include card(#C0FABE);
   text-align: center;
   display: flex;
   flex-flow: column nowrap;
   padding: 1rem;
   justify-content: center;
   align-items: space-around;
-  box-shadow: gray 3px 3px 8px;
-  background-color: #C0FABE;
   margin: 1rem;
-}
-
-.cta a:link{
-   text-decoration: none;
-   color:black;
-}
-
-.cta a:visited{
-   text-decoration: none;
-   color:black;
-}
-
-
-
-.cta img {
+  img {
   max-width: 300px;
 }
 
+a{
+   text-decoration: none;
+   color:black;
+}
+}
+
+
+
+article:first-of-type{
+  @include card($highlight)
+}
+
+
+
+
+
+
+
+
 footer {
-  background-color: #D2F0FA;
+  background-color: $highlight;
   padding: 1rem;
 }
 
@@ -56,23 +76,9 @@ input[type="submit"]{
 
 
 
-.accent {
-
-  color:#3A612D;
-
-}
 
 
-.highlight {
 
-  color:#D2F0FA;
-
-}
-
-
-.brand {
-  color:#2D5461;
-}
 
 ul li:nth-child(2) a:link{
   color:#3A612D;
@@ -83,7 +89,7 @@ ul li:nth-child(2) a:hover{
 }
 
 ul li:nth-child(2) a:visited{
-  color:#2D5461;
+  color:$brand;
 }
 
 

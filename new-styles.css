@@ -3,7 +3,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #2D5461;
+  color: dodgerblue;
   font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif; }
 
 .cta-container {
@@ -23,6 +23,9 @@ body {
           align-items: center; }
 
 .cta {
+  -webkit-box-shadow: gray 3px 3px 8px;
+          box-shadow: gray 3px 3px 8px;
+  background-color: #C0FABE;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,21 +41,17 @@ body {
   -webkit-box-align: space-around;
       -ms-flex-align: space-around;
           align-items: space-around;
+  margin: 1rem; }
+  .cta img {
+    max-width: 300px; }
+  .cta a {
+    text-decoration: none;
+    color: black; }
+
+article:first-of-type {
   -webkit-box-shadow: gray 3px 3px 8px;
           box-shadow: gray 3px 3px 8px;
-  background-color: #C0FABE;
-  margin: 1rem; }
-
-.cta a:link {
-  text-decoration: none;
-  color: black; }
-
-.cta a:visited {
-  text-decoration: none;
-  color: black; }
-
-.cta img {
-  max-width: 300px; }
+  background-color: #D2F0FA; }
 
 footer {
   background-color: #D2F0FA;
@@ -63,15 +62,6 @@ input[type="submit"] {
   color: white;
   background-color: #3a612d; }
 
-.accent {
-  color: #3A612D; }
-
-.highlight {
-  color: #D2F0FA; }
-
-.brand {
-  color: #2D5461; }
-
 ul li:nth-child(2) a:link {
   color: #3A612D; }
 
@@ -79,7 +69,7 @@ ul li:nth-child(2) a:hover {
   text-shadow: 5px 5px 5px #888888; }
 
 ul li:nth-child(2) a:visited {
-  color: #2D5461; }
+  color: dodgerblue; }
 
 p.storyBook::first-letter {
   font-size: 200%; }
